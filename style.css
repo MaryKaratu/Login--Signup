@@ -2,7 +2,7 @@
 
 :root {
   --accent-color: #8672ff;
-  --base-color: #ffff;
+  --base-color: #ffffff;
   --text-color: #2e2b41;
   --input-color: #f3f0ff;
 }
@@ -139,4 +139,23 @@ a {
 
 A:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 69em) {
+  .wrapper {
+    width: min(60rem, 100%);
+    border-radius: none;
+  }
+}
+
+.incorrect label {
+  background-color: #f06272;
+}
+
+form div.incorrect input {
+  border-color: #f06272;
+}
+
+#error-message {
+  color: #f06272;
 }
